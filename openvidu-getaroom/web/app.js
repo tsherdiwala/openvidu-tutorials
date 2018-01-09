@@ -43,7 +43,7 @@ function joinRoom(sessionId) {
 
 	// We will join the video-call "sessionId". As there's no server, this parameter must start with the URL of 
 	// OpenVidu Server (with secure websocket protocol: "wss://") and must include the OpenVidu secret at the end
-	session = OV.initSession("wss://" + location.hostname + ":8443/" + sessionId + "?secret=MY_SECRET");
+	session = OV.initSession("wss://" + location.hostname + ":8443/" + sessionId + "?secret=KNOXPO");
 
 
 	// --- 2) Specify the actions when events take place ---
