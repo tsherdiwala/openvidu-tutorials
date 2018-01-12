@@ -6,7 +6,7 @@ function joinSession() {
 	var sessionId = document.getElementById("sessionId").value;
 
 	OV = new OpenVidu();
-	session = OV.initSession("wss://" + location.hostname + ":8443/" + sessionId + '?secret=MY_SECRET');
+	session = OV.initSession("wss://" + location.hostname + ":8443/" + sessionId + '?secret=KNOXPO');
 
 	session.on('streamCreated', function (event) {
 		session.subscribe(event.stream, 'subscriber');
